@@ -8,4 +8,4 @@ from django.views.generic import(
 class SubjectListView(ListView):
     model=Subject
     template_name='space/index.html'
-    context_name='subjects'
+    context_object_name='subjects'

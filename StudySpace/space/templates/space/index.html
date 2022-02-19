@@ -66,67 +66,17 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4><a href="">Machine Learning</a></h4>
-              <p>An introduction to the basic principles, techniques, and
-                applications of machine learning, classification tasks, decision tree learning.</p>
-              <a href="" class="btn-get ">Join!!</a>
+          {% for sub in subjects %}
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="icon-box">
+                <div class="icon"><i class="{{sub.logo}}"></i></div>
+                <h4><a href="">{{sub.title}}</a></h4>
+                <p>{{sub.content}}</p>
+                <a href="" class="btn-get ">Join!!</a>
+              </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-cpu"></i></div>
-              <h4><a href="">MOS Circuit Design</a></h4>
-              <p>MOS structures in basic digital and analog circuits.
-                Describe the general processing steps required to fabricate an integrated circuit.</p>
-              <a href="" class="btn-get ">Join!!</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bi bi-motherboard"></i></div>
-              <h4><a href="">Computer Architecture</a></h4>
-              <p>Computer architecture deals with the design of computers, data storage devices, and networking components that store and run 
-                programs, transmit data,and drive interactions between computers, across networks, and with users.</p>
-              <a href="" class="btn-get ">Join!!</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-cloud"></i></div>
-              <h4><a href="">Cloud Computing</a></h4>
-              <p>Cloud computing is the on-demand availability of computer system resources, especially 
-                data storage and computing power, without direct active management by the user</p>
-              <a href="" class="btn-get ">Join!!</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Network Security</a></h4>
-              <p>Computer security, cybersecurity, or information technology security is the protection of computer systems and networks from information 
-                disclosure, theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide</p>
-              <a href="" class="btn-get ">Join!!</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-clipboard"></i></div>
-              <h4><a href="">EDS</a></h4>
-              <p>Course by CTD,TIET for placement preperations. Includes practice for group discussions,
-                case study and aptitude.
-              </p>
-              <a href="" class="btn-get ">Join!!</a>
-            </div>
-          </div>
-
+        
+          {% endfor %}
         </div>
 
       </div>
