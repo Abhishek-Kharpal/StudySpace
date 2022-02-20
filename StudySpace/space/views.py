@@ -9,3 +9,7 @@ class SubjectListView(ListView):
     model=Subject
     template_name='space/index.html'
     context_object_name='subjects'
+
+
+def team(request):
+    return render(request,'space/team.html')
