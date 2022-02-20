@@ -20,5 +20,6 @@ from .views import (
 from . import views
 
 urlpatterns = [
-    path('home/',SubjectListView.as_view(),name='space-home'),
+    path('',SubjectListView.as_view(),name='space-home'),
+    path('team/',views.team,name='space-team')
 ]
